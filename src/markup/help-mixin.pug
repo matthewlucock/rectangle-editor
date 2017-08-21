@@ -1,0 +1,14 @@
+mixin help-page(title)
+  doctype html
+  html
+    head
+      title= title
+      link(rel='stylesheet' href='../help.css')
+    
+    body
+      header#help-header
+        h1#help-page-heading= title
+        a#help-back-to-index(href='index.html') Back to index
+      
+      #help-page-body
+        block

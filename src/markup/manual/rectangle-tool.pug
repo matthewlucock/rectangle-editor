@@ -1,0 +1,25 @@
+include ../help-mixin
+
++help-page('Rectangle tool')
+  img(src='img/rectangle-tool.png' style='width: 100%')
+
+  p
+    | The rectangle tool can be used to create and modify
+    |
+    a(href='layers.html') rectangles
+    | .
+  
+  ol
+    li
+      | The
+      |
+      strong create rectangle layer
+      |
+      | button creates a new rectangle layer.
+    li Inputs for controlling the x and y coordinate of the top-left corner of the rectangle on the canvas. These values must be positive whole numbers.
+    li Inputs for controlling the size of the rectangle, with the x input setting the horizontal length of the rectangle, and the y input setting the vertical length.
+    li A colour input for setting the fill (background) colour of the rectangle.
+    li A colour input for setting the stroke (border) color of the rectangle.
+    li An input for setting the stroke (border) width of the rectangle. This is additional to the given size of the rectangle. This input must be a positive whole number.
+  
+  p The rectangle tool only works with rectangle layers. If the selected layer is not a rectangle layer, the inputs provided by the rectangle tool will be disabled.

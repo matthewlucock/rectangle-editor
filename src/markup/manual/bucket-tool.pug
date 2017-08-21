@@ -1,0 +1,22 @@
+include ../help-mixin
+
++help-page('Bucket tool')
+  img(src='img/bucket-tool.png')
+
+  p
+    | The bucket tool can be used to fill a
+    |
+    a(href='layers.html') raster layer
+    |
+    | with a solid colour.
+  
+  ol
+    li
+      strong The color input
+      | . Clicking it opens a colour selector for selecting a colour to be used with the bucket tool.
+    
+    li
+      strong The apply button
+      | . Clicking it actually activates the bucket tool, filling the selected layer with the solid colour given.
+  
+  p The bucket tool only works with raster layers. If the selected layer is not a raster layer, the color input and apply button will be disabled. 

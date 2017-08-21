@@ -1,0 +1,48 @@
+@import 'src/styles/reset'
+
+mainInterfaceColor = #555
+
+@import 'src/styles/editor/header'
+@import 'src/styles/editor/layer'
+@import 'src/styles/editor/layer-pane'
+@import 'src/styles/editor/toolbar'
+@import 'src/styles/editor/nav'
+
+body
+  font-size 25px
+  line-height 1
+
+  @media screen and (max-width: 1350)
+    font-size 20px
+
+a
+  color inherit
+  text-decoration none
+
+#editor
+  display flex
+  flex-direction column
+  height 100vh
+
+#editor-body
+  display flex
+  height 90%
+
+#canvas-pane
+  display flex
+  background black
+  width 75%
+  align-items center
+  justify-content center
+
+#editor-download-link
+  display none
+
+.editor-button
+  padding 0.25rem 0.5rem
+  background black
+  color white
+  transition background 0.25s
+
+  &:hover
+    background: #222

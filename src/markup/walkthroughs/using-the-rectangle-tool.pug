@@ -1,0 +1,68 @@
+include ../help-mixin
+
++help-page('Using the rectangle tool')
+  p In this walkthrough, we will use the rectangle tool to create and modify rectangles. Click the rectangle icon in the toolbar to select the rectangle tool.
+  
+  img(src='img/rectangle-tool-selected.png' style='width: 100%')
+  
+  p
+    | To begin with, the inputs presented by the rectangle tool are greyed out and disabled. The rectangle tool only becomes enabled when the selected layer is a
+    |
+    a(href='../manual/layers.html') rectangle layer
+    | . Rectangle layers are created using the
+    |
+    b create rectangle layer
+    |
+    | button. Use the create rectangle layer button to create a rectangle layer.
+  
+  img(src='img/rectangle-tool-created.png' style='width: 100%')
+  
+  p Now that the selected layer is a rectangle layer, the inputs for the rectangle tool have become enabled, including inputs for the rectangle's position, size, fill (background), and stroke (border).
+  
+  p
+    | Next to
+    |
+    b Size
+    |
+    | are two input fields. The
+    |
+    b X
+    |
+    | input sets the horizontal length of the rectangle, while the
+    |
+    b Y
+    |
+    | input sets the vertical length. These values must be positive whole numbers. Type a number into both inputs to give the rectangle a size. In this example, the rectangle will be 100 pixels by 100 pixels.
+  
+  img(src='img/rectangle-tool-size.png' style='width: 50%')
+  
+  p
+    | Our rectangle has now appeared on the canvas, but it is stuck in the top-left corner. The
+    |
+    b position
+    |
+    | inputs can be used to set the x and y-coordinates of the top-left corner of the rectangle on the canvas. These values must also be positive whole numbers. In this example, we will set both values to 200 pixels.
+  
+  img(src='img/rectangle-tool-position.png' style='width: 50%')
+  
+  p
+    | Now we will set the fill (background) colour of the rectangle. Next to
+    |
+    b fill
+    |
+    | is a button for opening a colour selector (provided by the browser) that can be used to select a fill colour for the rectangle. In this example, we will set the fill colour of the rectangle to a shade of green.
+  
+  img(src='img/rectangle-tool-fill.png' style='width: 50%')
+  
+  p
+    | We can also set a stroke (border) for the rectangle. The stroke is additional to the size of the rectangle we have already set. The width text input next to
+    |
+    b stroke
+    |
+    | can be used to set the width of the rectangle's stroke. This value must also be a positive whole number. In this example, we wil set the stroke width to 50 pixels.
+  
+  img(src='img/rectangle-tool-stroke-width.png' style='width: 50%')
+  
+  p The stroke defaults to black. We can set the colour of the stroke using the colour selector to the left of the field we just typed into. In this example, we wil set the stroke colour to a shade of blue.
+  
+  img(src='img/rectangle-tool-stroke-color.png' style='width: 50%')

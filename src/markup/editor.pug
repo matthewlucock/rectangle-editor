@@ -1,0 +1,49 @@
+doctype html
+html
+  head
+    title Rectangle Editor
+    link(rel='stylesheet' href='main.css')
+    script(src='main.js' defer)
+
+  body
+    #editor
+      #editor-header
+        input#editor-nav-visibility-input(type='checkbox')
+        label#editor-nav-button(for='editor-nav-visibility-input')
+          .editor-nav-button-strip
+          .editor-nav-button-strip
+          .editor-nav-button-strip
+
+        label#editor-nav-overlay(for='editor-nav-visibility-input')
+        nav#editor-nav
+          ul#editor-nav-items
+            li
+              button#editor-nav-new-image-button.editor-nav-button New
+            li
+              button#editor-nav-save-as-button.editor-nav-button Save as
+            li
+              a.editor-nav-button(href='../manual/index.html' target='_blank') Manual
+            li
+              a.editor-nav-button(href='../walkthroughs/index.html' target='_blank') Walkthroughs
+
+        #editor-controls-container
+          ul#editor-controls-category-names
+        
+      #editor-body
+        #toolbar
+          ul#toolbar-items
+            
+        #canvas-pane
+
+        #layer-pane
+          #layer-pane-controls
+            #layer-pane-creation-controls
+              button#create-new-layer-button.editor-button Create new layer
+            
+            #layer-pane-manipulation-controls
+              button#rename-layer-button.editor-button Rename
+              button#delete-layer-button.editor-button Delete
+          
+          ol#layer-list
+
+      a#editor-download-link

@@ -1,0 +1,71 @@
+#editor-nav-visibility-input
+  display none
+
+#editor-nav-button
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  width 5%
+  z-index 4
+  cursor pointer
+
+.editor-nav-button-strip
+  width 50%
+  height 5px
+  background black
+  transition background 0.5s
+
+  &:not(:last-child)
+    margin-bottom 5px
+
+  #editor-nav-visibility-input:checked ~ #editor-nav-button > &
+    background white
+
+#editor-nav
+  position absolute
+  top 0
+  bottom 0
+  width 20%
+  padding-top 10vh
+  background #333
+  color white
+  font-size 2.5rem
+  text-align center
+  z-index 3
+  transform translateX(-100%)
+  transition transform 0.5s
+
+  #editor-nav-visibility-input:checked ~ &
+    transform translateX(0)
+
+#editor-nav-overlay
+  position absolute
+  top 0
+  bottom 0
+  left 0
+  right 0
+  visibility hidden
+  opacity 0
+  background black
+  z-index 2
+  transition visibility 0.5s, opacity 0.5s
+
+  #editor-nav-visibility-input:checked ~ &
+    visibility visible
+    opacity 0.75
+
+#editor-nav-items
+  display flex
+  flex-direction column
+  justify-content center
+  height 100%
+
+.editor-nav-button
+  display block
+  width 100%
+  padding 0.5rem 1rem
+  transition background .2s
+
+  &:hover
+    background #666

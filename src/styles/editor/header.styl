@@ -1,0 +1,52 @@
+#editor-header
+  display flex
+  justify-content stretch
+  height 10%
+  background mainInterfaceColor
+
+#editor-controls-container
+  display flex
+  flex-direction column
+  align-items center
+  flex-grow 1
+  font-size 95%
+
+.editor-controls-category
+  font-size 0.9em
+
+#editor-controls-category-names, .editor-controls-category
+  display flex
+  height 50%
+
+.editor-controls-category-name
+  padding 5px 50px
+
+.editor-control
+  padding 5px 20px
+
+.editor-controls-hidden
+  display none
+
+.editor-controls-category-name-selected
+  background #777
+
+.editor-control-text-input
+  width 90px
+  background #333
+  color white
+  text-align center
+  margin 0 10px
+  font-size 0.9em
+
+  &:invalid
+    background rgb(231, 84, 84)
+
+  &:disabled
+    color #999
+
+.editor-control-color-input
+  &:disabled
+    opacity 0.5
+
+#create-rectangle-layer-button, #apply-bucket-tool-button
+  font-size 0.7em

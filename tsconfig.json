@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "removeComments": true,
+    "module": "commonjs",
+    "target": "es2016",
+    "pretty": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "outDir": "temp/js",
+    "alwaysStrict": true,
+    "noImplicitThis": true
+  },
+  "files": ["src/scripts/main.ts"]
+}

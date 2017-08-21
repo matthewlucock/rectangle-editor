@@ -1,0 +1,23 @@
+#toolbar
+  width 5%
+  background mainInterfaceColor
+
+.toolbar-item
+  height 5vw
+  cursor pointer
+  background-repeat no-repeat
+  background-size calc(5vw - 20px)
+  background-position center
+  transition background-color 0.2s
+
+  &:not(.toolbar-item-selected):hover
+    background-color #666
+
+.toolbar-item-selected
+  background-color #444
+
+#rectangle-toolbar-item
+  background-image url(rectangle.png)
+
+#bucket-toolbar-item
+  background-image url(bucket.png)

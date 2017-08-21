@@ -1,0 +1,49 @@
+include ../help-mixin
+
++help-page('Using the layer pane')
+  p In this walkthrough, we will learn how to use the layer pane to manage layers in the editor.
+  
+  img(src='img/layer-pane.png')
+  
+  p
+    | The layer pane consists of the
+    |
+    b layer manipulation controls
+    |
+    | and the
+    |
+    b layer list
+    |
+    | beneath them. The layer manipulation controls contains buttons for creating new raster layers, renaming layers, and deleting layers. The layer list lists the image layers currently in the editor. Click the
+    |
+    b create new layer
+    |
+    | button to create a new raster layer.
+  
+  img(src='img/layer-pane-create-new-layer.png')
+  
+  p
+    | Our new layer has now appeared in the layer list. For each layer, the layer list gives the layer's name and a thumbnail displaying the contents of that layer. Our new layer has been automatically selected, as indicated by the darkened background behind its list item in the layer list. Use the bucket tool to fill the layer with a colour of your choosing, as was discussed in the
+    |
+    a(href='editor-basics.html') previous walkthrough
+    | .
+  
+  p Clicking on a layer in the layer lists deselects the layer that was previously selected, and selects the layer that you clicked on. Click on the first layer in the layer list (the layer that was there to begin with) to select it.
+  
+  img(src='img/layer-pane-selecting-layers.png')
+  
+  p The rename button can be used to rename the currently selected layer. Clicking it opens a prompt in the browser in which you can enter a new name. Use the rename button to give the layer a new name, and then use the bucket tool again to fill this layer with another colour.
+  
+  img(src='img/layer-pane-rename.png' style='width: 50%')
+  
+  p The new name of our layer now appears in the layer list. You will also now notice that the canvas has changed to the new colour we just set. The layer list lists layer in order of their visual priority; layers at top of the list will be rendered above layers later in the list. In our example, the first layer is rendered on top of the second layer, effectively blocking out the second layer.
+  
+  p We can, however, hide the first layer to reveal the second layer. The black circle next to the image thumbnail is the button for toggling the visibility of the layer. A full circle means the layer is visible, while a hollow circle means the layer is hidden. Clicking the circle toggles the layer between these two states. Click the layer visibility toggle on the first layer to hide it, revealing the second layer below it.
+  
+  img(src='img/layer-pane-visibility.png' style='width: 50%')
+  
+  p We can also re-order the layers in the layer list to change their visual priority. Hovering over a layer in the layer list causes two arrows to appear next to the layer name. Clicking the up arrow moves the layer up in the layer list, and clicking the down arrow moves the layer down. Click the layer visibility toggle for the first layer to show it again, but then use the arrows to either move the first layer down or move the second layer up.
+  
+  img(src='img/layer-pane-reorder.png' style='width: 50%')
+  
+  p We can also use the layer pane to delete layers. Select one of the layers and click the delete button to delete it, leaving the other layer behind.

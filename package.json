@@ -1,0 +1,30 @@
+{
+  "name": "image-editor",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matthewlucock/image-editor.git"
+  },
+  "author": "matthewlucock",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.0.0",
+    "@types/color": "^1.0.4",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^7.0.22",
+    "browserify": "^14.4.0",
+    "chai": "^4.0.2",
+    "color": "^1.0.3",
+    "cpy": "^5.1.0",
+    "mocha": "^3.4.2",
+    "pug": "^2.0.0-rc.1",
+    "stylus": "^0.54.5",
+    "typescript": "^2.3.3"
+  },
+  "scripts": {
+    "scripts": "tsc && browserify temp/js/main.js -o dist/editor/main.js",
+    "tests": "browserify test/test.js -o test/test-processed.js"
+  }
+}

@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title Walkthroughs
+    link(rel='stylesheet' href='../help.css')
+  
+  body
+    header#help-header
+      h1#help-page-heading Walkthroughs
+      a#help-back-to-index(href='../index.html') Back to splash screen
+
+    nav#manual-navigation
+      ul
+        each value, key in walkthroughsPagesTitles
+          li
+            a.navigation-link(href=key + '.html')= value
